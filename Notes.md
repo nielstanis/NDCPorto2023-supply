@@ -36,7 +36,7 @@ Then we're going to do the following things:
 - Now verify the blob with following command, replace certificate-identity with yours and oidc with the one you've chosen:
   - GitHub: `cosign verify-blob --cert pub.crt --certificate-identity nielstanis@live.nl --certificate-oidc-issuer https://github.com/login/oauth --signature ndcporto.txt.sig ndcporto.txt`
   - Google: `cosign verify-blob --cert pub.crt --certificate-identity niels.tanis@gmail.com --certificate-oidc-issuer  https://accounts.google.com --signature ndcporto.txt.sig ndcporto.txt`
-  - GitHub: `cosign verify-blob --cert pub.crt --certificate-identity nielstanis@live.nl --certificate-oidc-issuer https://login.microsoftonline.com --signature ndcporto.txt.sig ndcporto.txt`
+  - Microsoft: `cosign verify-blob --cert pub.crt --certificate-identity nielstanis@live.nl --certificate-oidc-issuer https://login.microsoftonline.com --signature ndcporto.txt.sig ndcporto.txt`
 - Now change the `ndcporto.txt` file and verify the blob again.
 
 # Git Commit Signing
